@@ -1,30 +1,50 @@
-# Requirements — DRAFT (not yet confirmed by the MD)
+# Requirements
 
-Status: **Draft v0.1 — 2026-09-29.** Built from research only. Each item becomes "Confirmed" once answered in [QUESTIONS.md](QUESTIONS.md).
+Status: **v0.2, 2026-10-31.** Updated with the MD's round-1 answers. Items still waiting on the round-2 questions in [QUESTIONS.md](QUESTIONS.md) are marked *Pending*.
 
-## Business goals (assumed)
-- G1. Present D&D Lanka as Sri Lanka's leading, trusted bearings & sealing specialist (35+ years).
-- G2. Generate trade enquiries / quote requests from workshops, fleet operators, factories and resellers.
-- G3. Help customers find the right part quickly (by category, brand, size / part number).
-- G4. Direct customers to the nearest of the 5 branches.
-- G5. Showcase the brands carried and any authorized distributorships.
+## Confirmed direction
+- **Rebuild from scratch** on a modern framework that is easy to change with Claude Code. The vendor's WordPress site is not being kept.
+- **Main purpose: SEO.** Rank on Google for bearings, seals and related searches across Sri Lanka.
+- **Audience:** anyone who uses the products: businesses, factories, workshops, car owners, machinery users.
+- **New design**, to be planned. Brand assets come after the planning phase.
+- **Content is entered by D&D staff through an admin panel.** So the admin panel must be easy to use.
+- **Self-hosted** by D&D.
+- **Future, not now:** e-shop, prices, stock availability, multiple languages. The architecture must allow all of these later without a rebuild.
 
-## Functional requirements (proposed)
+## Business goals
+- G1. Rank on page 1 of Google for product and brand searches in Sri Lanka (e.g. "bearings Sri Lanka", "oil seals Colombo", part-number searches).
+- G2. Turn visitors into enquiries (call, WhatsApp, form, branch visit).
+- G3. Help customers find the right part quickly (by category, brand, size or part number).
+- G4. Send customers to the nearest of the 5 branches (local SEO).
+- G5. Leave room for an e-shop later.
+
+## Functional requirements
 | ID | Requirement | Status |
 |---|---|---|
-| F1 | Home, About (history, vision/mission, management), Products, Brands, Industries, Branches, Contact | Proposed |
-| F2 | Product catalogue by category → sub-category → brand, with specs/size tables | Proposed — scope TBD |
-| F3 | Search by part number / dimensions (ID × OD × width) | Proposed — depends on stock data |
-| F4 | Enquiry / request-a-quote form (and WhatsApp click-to-chat) | Proposed |
-| F5 | Branch pages with map, phone, hours | Proposed |
-| F6 | Brands page with logos and distributorship status | Proposed |
-| F7 | Downloadable catalogues/brochures (PDF) | Proposed |
-| F8 | Staff can edit content, products, branches without a developer | Proposed |
-| F9 | Online ordering / prices / e-commerce | **Unknown** |
-| F10 | Languages: English; Sinhala / Tamil? | **Unknown** |
+| F1 | Pages: Home, About (history, vision/mission, management), Products, Brands, Industries, Branches, Contact | Confirmed (scope) |
+| F2 | Admin panel where staff add and edit pages, products, categories, brands, industries, branches, images and SEO fields without a developer | **Confirmed** |
+| F3 | Product catalogue: category → sub-category → product, with brand, specs and size tables | Confirmed; depth *Pending R4* |
+| F4 | Search by keyword, part number or dimensions (ID × OD × width) | Proposed |
+| F5 | Enquiry / request-a-quote form + WhatsApp click-to-chat per branch | Proposed; routing *Pending R9* |
+| F6 | One page per branch: map, phone, WhatsApp, hours | Proposed |
+| F7 | One page per brand and per industry (SEO landing pages) | Proposed |
+| F8 | Blog / knowledge base | *Pending R8* |
+| F9 | Downloadable catalogues (PDF) | Proposed |
+| F10 | Redirect manager in the admin panel; 301 redirects from old Joomla URLs | Proposed; *Pending R6* |
+| F11 | Multi-language-ready content model (English first; Sinhala/Tamil later) | Proposed; *Pending R7* |
+| F12 | E-shop (cart, checkout, payments, stock) | **Future**. Keep the product model compatible |
 
-## Non-functional (proposed)
-- Mobile-first, fast on Sri Lankan mobile networks (target Lighthouse ≥ 90).
-- Current, supported software (PHP 8.2+, latest WordPress if we keep WordPress), HTTPS, backups, security hardening.
-- SEO: clean URLs, 301 redirects from old `/index.php/...` URLs, Google Business Profiles for all branches, schema.org LocalBusiness.
-- Consistent branding (logo, colours) — assets to be supplied.
+## SEO requirements (core of the project; see [SEO_STRATEGY.md](SEO_STRATEGY.md))
+- S1. Server-rendered or static HTML for every public page (no client-only rendering).
+- S2. Editable SEO title, meta description, social image and canonical URL on every page and product.
+- S3. Auto-generated `sitemap.xml` and `robots.txt`; hreflang tags once languages are added.
+- S4. Structured data: Organization, LocalBusiness per branch, Product, BreadcrumbList, FAQ.
+- S5. Core Web Vitals "Good" on mobile; Lighthouse ≥ 90 in all categories.
+- S6. Clean, keyword-friendly URLs (`/products/bearings/deep-groove/6205-2rs`).
+- S7. Image optimisation (WebP/AVIF, responsive sizes, alt text required in the admin panel).
+
+## Non-functional
+- Mobile-first and fast on Sri Lankan mobile networks.
+- Current, supported software only. Automated backups, HTTPS, security headers.
+- The whole site (content model included) is defined in code in this repo, so Claude Code can change it safely.
+- Admin roles and permissions (*Pending R5*).

@@ -1,26 +1,34 @@
 # Plan
 
-## Phase 0 — Discovery (in progress)
-- [x] Research company online → COMPANY_PROFILE.md
+## Phase 0: Discovery
+- [x] Research the company online → COMPANY_PROFILE.md
 - [x] Draft requirements and questions
-- [ ] MD answers QUESTIONS.md → requirements v1.0 confirmed
+- [x] Round-1 answers from the MD → REQUIREMENTS.md v0.2
+- [ ] Round-2 answers (hosting, stack, catalogue depth, etc.) → requirements v1.0
 
-## Phase 1 — Audit the vendor's `.wpress` file
-- [ ] Receive file; extract (All-in-One WP Migration format) without running untrusted code
-- [ ] Inventory: WP version, theme, plugins (licensing, abandoned, nulled/pirated), pages, media, DB content
-- [ ] Security scan (malware, backdoors, hard-coded credentials, admin users)
-- [ ] Run locally (Docker) and screenshot desktop + mobile
-- [ ] Measure performance, accessibility, SEO
-- [ ] Gap analysis vs confirmed requirements → AUDIT.md
-- [ ] Recommendation: fix / partial reuse / rebuild
+## Phase 1: Planning (current)
+- [x] Tech stack options and recommendation → TECH_STACK.md
+- [x] SEO strategy draft → SEO_STRATEGY.md
+- [ ] Stack approved by the MD
+- [ ] Sitemap / information architecture → SITEMAP.md
+- [ ] Content model (collections & fields for the admin panel) → CONTENT_MODEL.md
+- [ ] Crawl the current Joomla site, then a URL redirect map → REDIRECTS.md
+- [ ] Optional: quick reference review of the vendor `.wpress` file (no audit, just salvage) *Pending R3*
+- [ ] Design direction & wireframes → DESIGN.md (MD sends brand assets after this phase)
 
-## Phase 2 — Build (depends on Phase 1 decision)
-- [ ] Information architecture + wireframes for approval
-- [ ] Design + content
-- [ ] Development, product catalogue, forms
-- [ ] Redirects from old Joomla URLs, SEO, analytics
+## Phase 2: Build
+- [ ] Project scaffold (Docker, CI, lint/typecheck/tests)
+- [ ] Content model + admin panel, roles
+- [ ] Public pages, catalogue, search, enquiry forms, WhatsApp
+- [ ] SEO: metadata, schema, sitemap, redirects, performance budget
+- [ ] Admin user guide for staff → ADMIN_GUIDE.md
 
-## Phase 3 — Launch
-- [ ] Staging review with MD, fixes
-- [ ] Hosting, backups, security, DNS cutover (without breaking email)
-- [ ] Handover guide for staff
+## Phase 3: Launch
+- [ ] Self-hosting setup guide → DEPLOYMENT.md (server, backups, HTTPS, monitoring)
+- [ ] Staging review with the MD
+- [ ] DNS cutover without breaking email; Search Console, sitemap submission
+- [ ] Fix NAP on all directories; Google Business Profiles for all branches
+
+## Future phases
+- [ ] Sinhala / Tamil languages
+- [ ] E-shop (prices, stock, cart, payments)
