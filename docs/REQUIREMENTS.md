@@ -8,7 +8,7 @@ Status: **v0.2, 2026-10-31.** Updated with the MD's round-1 answers. Items still
 - **Audience:** anyone who uses the products: businesses, factories, workshops, car owners, machinery users.
 - **New design**, to be planned. Brand assets come after the planning phase.
 - **Content is entered by D&D staff through an admin panel.** So the admin panel must be easy to use.
-- **Self-hosted** by D&D.
+- **Self-hosted** by D&D on a **VPS / cloud server**.
 - **Future, not now:** e-shop, prices, stock availability, multiple languages. The architecture must allow all of these later without a rebuild.
 
 ## Business goals
@@ -23,7 +23,8 @@ Status: **v0.2, 2026-10-31.** Updated with the MD's round-1 answers. Items still
 |---|---|---|
 | F1 | Pages: Home, About (history, vision/mission, management), Products, Brands, Industries, Branches, Contact | Confirmed (scope) |
 | F2 | Admin panel where staff add and edit pages, products, categories, brands, industries, branches, images and SEO fields without a developer | **Confirmed** |
-| F3 | Product catalogue: category → sub-category → product, with brand, specs and size tables | Confirmed; depth *Pending R4* |
+| F3 | Product catalogue: category → sub-category → **one page per part number**, with brand, specs and size tables | **Confirmed** (R4) |
+| F3a | Bulk import/update of products from Excel/CSV (and later the ERP) | **Confirmed** (R4) |
 | F4 | Search by keyword, part number or dimensions (ID × OD × width) | Proposed |
 | F5 | Enquiry / request-a-quote form + WhatsApp click-to-chat per branch | Proposed; routing *Pending R9* |
 | F6 | One page per branch: map, phone, WhatsApp, hours | Proposed |

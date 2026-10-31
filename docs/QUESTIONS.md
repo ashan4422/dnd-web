@@ -41,10 +41,10 @@ Status legend: ❓ open · ✅ answered · 🟡 partly answered · ⏳ you'll pr
 
 # Round 2: questions for the planning phase (asked 2026-10-31)
 
-R1. ❓ **Server type** for self-hosting: a VPS or cloud server that can run Node.js + PostgreSQL, or shared cPanel/PHP hosting only? **This decides the framework** (see TECH_STACK.md).
-R2. ❓ Do you approve the recommended stack (**Next.js + Payload CMS + PostgreSQL**)?
-R3. ❓ What to do with the vendor's `.wpress` file now that we are rebuilding: use it as a quick reference (structure, images, anything worth keeping), or skip it?
-R4. ❓ How detailed should the catalogue be? Separate SEO pages per part number (e.g. "6205-2RS bearing") or category/brand pages only? Roughly how many items at launch?
+R1. ✅ **(2026-10-31) VPS / cloud server.** — **Server type** for self-hosting: a VPS or cloud server that can run Node.js + PostgreSQL, or shared cPanel/PHP hosting only? **This decides the framework** (see TECH_STACK.md).
+R2. 🟡 **(2026-10-31) MD asked for a plainer explanation first** (added to TECH_STACK.md). — Do you approve the recommended stack (**Next.js + Payload CMS + PostgreSQL**)?
+R3. ✅ **(2026-10-31) Quick reference only.** Unpack safely and salvage useful structure, images and text. No full audit. — What to do with the vendor's `.wpress` file now that we are rebuilding: use it as a quick reference (structure, images, anything worth keeping), or skip it?
+R4. ✅ **(2026-10-31) A page per part number.** Bulk import from Excel/ERP needed. Item count at launch still open. — How detailed should the catalogue be? Separate SEO pages per part number (e.g. "6205-2RS bearing") or category/brand pages only? Roughly how many items at launch?
 R5. ❓ Who will use the admin panel (how many people, which roles: admin / editor / branch staff)?
 R6. ❓ Keep the domain **dndlanka.com** and redirect the old Joomla URLs (`/index.php/...`) so existing Google rankings carry over?
 R7. ❓ Build multi-language support in from day one (English first; Sinhala/Tamil can be added later without a rebuild)?

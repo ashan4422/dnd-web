@@ -10,3 +10,6 @@
 | 2026-10-31 | Self-hosted by D&D | MD | Final |
 | 2026-10-31 | Content entered by D&D staff through an admin panel | MD | Final |
 | 2026-10-31 | Stack: **Next.js + Payload CMS + PostgreSQL** (fallback Laravel + Filament if PHP-only hosting) | See TECH_STACK.md | **Proposed: waiting for MD (R1, R2)** |
+| 2026-10-31 | Hosting on a **VPS / cloud server** (Node.js + PostgreSQL capable) | MD (R1) | Final |
+| 2026-10-31 | `.wpress` file: **quick reference / salvage only**, no full audit | MD (R3) | Final |
+| 2026-10-31 | Catalogue: **one SEO page per part number**, with bulk import from Excel/ERP | MD (R4); biggest long-tail SEO opportunity | Final |

@@ -13,3 +13,5 @@
 - New: TECH_STACK.md (recommend Next.js + Payload CMS + PostgreSQL; fallback Laravel + Filament), SEO_STRATEGY.md (including NAP inconsistencies found online).
 - PLAN.md restructured into Discovery → Planning → Build → Launch → Future.
 - **Next:** MD answers round-2 (most important: R1 server type, R2 stack approval, R3 `.wpress` role, R4 catalogue depth), then SITEMAP.md and CONTENT_MODEL.md.
+- Round-2 partial answers: VPS hosting ✅, `.wpress` = quick reference only ✅, a page per part number ✅. Framework: MD asked for a plain-language explanation, now added to TECH_STACK.md.
+- **Next:** MD approves the framework (R2) and answers R5–R13; MD sends the `.wpress` file.
